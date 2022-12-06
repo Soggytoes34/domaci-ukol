@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikt wikipedia</title>
+    <style>
+        html{height: 100%;}
+        body{color: white;padding: 0;margin: 0;
+        background-color: black;
+        ;background-repeat: no-repeat;background-size: cover;min-height: 120vh;flex-direction: column;display: flex;  background-image: url(BGB.gif)
+        }
+        h1{font-weight: bold;text-transform: uppercase;}
+        h1,h2{font-family: Arial, sans-serif;
+            font-style: italic;
+        text-decoration: underline ;
+        display: inline;
+        padding: 10px;
+        letter-spacing: 2px;
+        }
+        .vid{
+            text-align: center ;
+            border: 4px black solid ;
+            background-color: rgb(82, 82, 82);
+        }
+        .subvid{border-left: 3px black solid ;border-right: 3px black solid;
+        display: inline-block;padding-left: 10px;padding-right: 10px;
+        }
+        .home{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        padding-left: 18px;padding-top: 18px; padding-bottom: 8px;padding-right: 18px;border-right: 3px black solid;
+        font-size:25px ; 
+        display: inline;
+        font-weight: bold;
+        transition: 0.3s ease-in;
+       
+        background-color:rgb(82, 82, 82) ;
+       
+    }
+    .home:hover{background-color: rgb(0, 109, 117);
+    color: black;
+    }
+    .fakepedia{text-align: end;display: inline;float: right;font-size: 30px;letter-spacing: 3px;text-decoration:wavy underline rgb(0, 0, 0);padding-top: 10px;padding-right: 10px;}.fp1{color: rgb(0, 0, 0);font-family:Lucida Sans;font-weight: bold;-webkit-text-stroke-width: 1px;-webkit-text-fill-color: rgb(0, 139, 0);}.fp2{color: rgb(0, 146, 0);font-style: italic;}
+    .home2{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        
+        font-size:10px ;  
+   display: inline;
+   font-weight: bold;
+   text-align: center;
+   padding-left: 2px;
+    }
+    .home a{color: white;text-decoration: none; }.home a:hover{color: black;}
+  footer{margin-top: 650px;display: inline-flex;width: 100%;margin-top: 1000px;
+background-color: rgb(82, 82, 82);font-size: 18px;font-weight: bold;padding: 30px;border: 2px black solid;height: 10px;word-spacing: 600px;letter-spacing: 2px;
+}   
+ .mezera{letter-spacing: 10px;}
+
+
+
+
+a{text-decoration: none;}
+section{ position: relative; display: inline-flex; width: 100%;padding: 20px; list-style: none;margin-left: 10px; line-height: 40px;  left: 1700px;} li a{color: aliceblue; }  
+.blackbg{font-size: 20px;letter-spacing: 2px;text-decoration: wavy,;text-transform: uppercase;font-weight: bold;position: absolute;border: white 5px double;background-color: black;border-radius: 5%;
+width: 150px;}
+.blackbg li{height: 40px;} .li1 .blackbg{width: 100%;}
+.blackbg #li1{background-color: black;}
+.li1{width: 10px;transition: 0.3s;background-color: #2d7072; } .li1:hover{width: 100%;} 
+.li2{width: 10px;transition: 0.3s;background-color:#2d7072; } .li2:hover{width: 100%;}
+.li3{width: 10px;transition: 0.3s;background-color:#2d7072; } .li3:hover{width: 100%;}
+.li4{width: 10px;transition: 0.3s;background-color:#2d7072; } .li4:hover{width: 100%;}
+.li5{transition: 0.5s;background-color: rgb(0, 0, 0); font-size: 18px;letter-spacing: 2px;text-decoration: underline white;text-transform: uppercase;top: 340px;
+    border: rgb(255, 255, 255) 2px double; position: absolute; display: block;padding: 1px; list-style: none;left: 1750px;color: white;padding: 10px;padding-left: 30px;padding-right: 30px;} .li5:hover a{color: rgb(0, 128, 122);} .li5:hover{font-size: 20px;}
+.li5 a{color: white;transition: 0.3s}
+
+.blackbg2{background-color: black; display: inline-block;padding: 20px;border-radius: 5%;border: 5px white solid;}
+
+                     
+
+.ON-OFF,.ppozadi{position:absolute;}
+.ON-OFF{top: 105px;left: 64px;font-weight: bold;}
+.ppozadi{background-color: black;color: white ;border: 2px white solid;font-size: 20px;letter-spacing: 2px;padding: 5px;border-radius: 30px;top: 78px;left: 15px;}
+
+
+
+
+.logout{position: absolute;display: flex;width: 30px;height: 30px;top: 20px;right: 200px;}
+.man{position: absolute;display: flex;width: 50px;height: 50px;top: 10px;right: 235px;}
+.login{position: absolute;display: flex;top: 50px;right: 237px;}
+
+
+
+.zdroje{display: flex;position: absolute; font-weight: bold;left: 250px;border-left: 2px black solid;border-right: 2px black solid;padding: 10px;font-size: 25px;height: 40px;padding-top: 20px;font-family: sans-serif; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;     }   
+.drop{opacity: 0%; ;display: flexbox;width: 95px;left: 250px;position:  absolute; background-color: rgb(82, 82, 82);height: 65px; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;  }
+    .drop:hover{opacity: 100%;padding-top: 10px;color: white;height: 3%;top: 60px;}
+   
+    .txt{border: #2d7975 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 100px;
+    left: 605px;
+    text-align: justify;
+    padding-top: 0;
+    letter-spacing: 0.5px;
+    padding-left: 40px;
+}
+.nadpis{font-weight: bold;text-align: center;text-decoration: underline;font-size: 20px;font-family: sans-serif;padding-top: 0;
+
+}
+
+.txt2{background-color: black;
+    border: #2d7072 4px solid;
+    display: block;
+    position: absolute;
+    padding: 20px;
+    top: 400px;
+    right: 20px;
+    
+}
+.nadpis2{font-weight: bold;text-align: center;text-decoration: underline;font-size: 20px;font-family: sans-serif;padding-top: 0;}
+
+.txt3{background-color: black;
+    border: 4px solid#2d7072 ;
+    position: absolute;
+    left: 50px;
+    top: 400px;
+    padding:20px;
+    letter-spacing: 0.55px;
+    line-height: 20px;
+    word-spacing: 0.3px;
+}
+.nadpis3{font-weight: bold;text-align: center;text-decoration: underline;font-size: 20px;font-family: sans-serif;padding-top: 0;}
+
+.goodpc{width: 300px;height: 200px;position: absolute;border: black 2px solid;border-radius:10% ;top: 360px;left: 560px;}
+.oldpc{width: 300px;height: 200px;position: absolute;border: black 2px solid;border-radius:10% ;top: 600px;left: 560px;}
+.crazypc{width: 300px;height: 200px;position: absolute;border: black 2px solid;border-radius:10% ;top: 360px;left: 880px;}
+.notebook{width: 300px;height: 200px;position: absolute;border: black 2px solid;border-radius:10% ;top: 600px;left: 880px;}
+   </style>
+</head>
+<body>
+    <header>
+    <div class="vid">
+        <div class="bordr">   <span class="home"><a href="index.html">IKT <br> <span class="home2">(home) </a></span></span></div>
+        <div class="zdroje">Zdroje</div>  <a href="https://en.wikipedia.org/wiki/Information_and_communications_technology" class="drop">wikipedia</a> 
+           <div class="subvid">
+                <h1>Ikt</h1> <br>
+                <h2>(Informační a komunikační technologie)</h2>  
+            </div>
+            <img src="logout.png" class="logout">
+            <img src="man.png" class="man"><span class="login"> Log in</span>
+            <div class="fakepedia"><span class="fp1">FAKE</span><span class="fp2">pedia</span></div>
+          <br>
+      </div>
+</header><br>
+
+
+<button onclick="doSomething()" class="ppozadi" >Pozastavit pozadí</button>
+<p id="test" class="ON-OFF"> [ Zapnuto ]</p>
+
+<div class="txt">
+    <p class="nadpis">Počítače</p>
+    První počítače byly určeny pouze k výpočtům, byly vyvinuty už během<br> druhé světové války.
+    Moderní počítač se obvykle skládá z alespoň jednoho<br> výpočetního prvku, v podobě mikroprocesoru,
+     spolu s nějakým typem <br>počítačové paměti. Procesorová jednotka provádí aritmetické a logické <br>operace
+      a sekvenční a řídicí jednotka může měnit pořadí operací v <br> závislosti na uložených informacích. 
+      Mezi periferní zařízení patří<br> vstupní zařízení (klávesnice, myš, joystick atd.),
+        výstupní zařízení <br>(monitory, tiskárny atd.) a vstupně-výstupní zařízení,<br>
+        která plní obě funkce (např. dotyková obrazovka). 
+</div>
+<div class="txt2">
+<p class="nadpis2">Hardware</p>
+<b><i> technické vybavení počítače, tedy fyzické část</i></b>
+<ul>
+    <li><b>počítačová skříň</b>- skříň z plechu</li>
+    <li><b>základní deska</b>- obsahuje většinu elektronických částí počítače</li>
+    <li><b>mikroprocesor</b>- vykonává strojové instrukce, ze kterých jsou složeny programy</li>
+    <li><b>operační paměť </b>- za běhu počítače uchovává programy a data</li>
+    <li><b>grafická karta</b>- umožňuje vytvořit v paměti obraz, který zobrazí na monitoru</li>
+    <li><b>zvuková karta </b>- vytváří signál, který se v reproduktoru mění na zvuk</li>
+    <li><b>sběrnice</b>- propojuje vstupně-výstupní zařízení s procesorem </li>
+    <li><b>síťová karta</b>- vytváří signál, který se v reproduktoru mění na zvuk</li>
+    <li><b>pevný disk</b>- uchovává programy i data i po vypnutí počítače</li>
+    <li><b>elektrický zdroj</b>napájení počítače</li>
+    <li><b>monitor</b>- zobrazuje informace uživateli, je připojen ke grafické kartě nebo základní desce.</li>
+    <li><b>počítačová klávesnice</b>- zprostředkovává alfanumerický vstup od uživatele</li>
+    <li><b>počítačová myš</b>- umožňuje pohybovat kurzorem myši a vyvolávat události stiskem tlačítka </li>
+</ul>
+</div>
+
+
+<abbr title="moderní počítač"><img src="goodpc.png" class="goodpc"></abbr>
+<abbr title="???"><img src="crazypc.png" class="crazypc"></abbr>
+<abbr title="zastaralí počítač"><img src="oldpc.png" class="oldpc"></abbr>
+<abbr title="notebook"><img src="notebook.png" class="notebook"></abbr>
+
+
+
+
+
+<div class="txt3">
+    <p class="nadpis3">Software</p>
+   Je programové vybavení počítače, tedy řada instrukcí,<br> které jsou počítačem postupně provedeny<br>
+    Software zahrnuje nejen operační systém, <br>pomocné programy a aplikační software, ale i programy,<br>
+     které jsou uloženy v počítači napevno (například v BIOSu,<br> UEFI, nebo v některých vstupně-výstupních <br>
+     zařízeních). Software je nezbytný pro provoz počítače a<br> řeší konkrétní úlohy ve spolupráci s uživatelem.<br>
+      Program vzniká při programování jako zápis algoritmu v <br>nějakém programovacím jazyku. <br>
+      Spuštěný program označujeme jako proces.
+    </div>
+    
+
+
+
+<div>
+       <section>
+        <div class="blackbg">
+        <li class="li1"><a href="Index.html">DOMŮ</a></li>
+        <li class="li2"><a href="Telefony.html">Telefony</a></li>
+        <li class="li3"><a href="počítače.html">Počítače</a></li>
+        <li class="li4"><a href="Intenet.html">Internet</a></li>
+        <li class="li4"><a href="Software.html">Software</a></li>
+    </div>
+    </section>
+    <button class="li5"><a href="kvíz.html">kvíz</a></button>
+
+
+
+
+
+
+
+
+<footer> Vytvoři<span class="mezera">l</span>Jaku<span class="mezera">b</span>Hloušek              privac<span class="mezera">i</span>policy         ContactFAK<span class="mezera">E</span>pedia  </footer>
+
+</body>
+<script>
+    function doSomething(){
+                document.getElementById('test').innerHTML = " [ Vypnuto ]"
+            
+             
+                  document.querySelector('body').style.background = "url('BGB.png') center center / cover"
+       
+    }
+     
+</script>
+</html>

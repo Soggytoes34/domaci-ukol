@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikt wikipedia</title>
+    <style>
+        html{height: 100%;}
+        body{color: white;padding: 0;margin: 0;
+        background-color: black;
+        ;background-repeat: no-repeat;background-size: cover;min-height: 100vh;flex-direction: column;display: flex;  background-image: url(BGY.gif)
+        }
+        h1{font-weight: bold;text-transform: uppercase;}
+        h1,h2{font-family: Arial, sans-serif;
+            font-style: italic;
+        text-decoration: underline ;
+        display: inline;
+        padding: 10px;
+        letter-spacing: 2px;
+        }
+        .vid{
+            text-align: center ;
+            border: 4px black solid ;
+            background-color: rgb(82, 82, 82);
+        }
+        .subvid{border-left: 3px black solid ;border-right: 3px black solid;
+        display: inline-block;padding-left: 10px;padding-right: 10px;
+        }
+        .home{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        padding-left: 18px;padding-top: 18px; padding-bottom: 8px;padding-right: 18px;border-right: 3px black solid;
+        font-size:25px ; 
+        display: inline;
+        font-weight: bold;
+        transition: 0.3s ease-in;
+       
+        background-color:rgb(82, 82, 82) ;
+       
+    }
+    .home:hover{background-color: rgb(99, 117, 0);
+    color: black;
+    }
+    .fakepedia{text-align: end;display: inline;float: right;font-size: 30px;letter-spacing: 3px;text-decoration:wavy underline rgb(0, 0, 0);padding-top: 10px;padding-right: 10px;}.fp1{color: rgb(0, 0, 0);font-family:Lucida Sans;font-weight: bold;-webkit-text-stroke-width: 1px;-webkit-text-fill-color: rgb(0, 139, 0);}.fp2{color: rgb(0, 146, 0);font-style: italic;}
+    .home2{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        font-size:10px ;  
+   display: inline;
+   font-weight: bold;
+   text-align: center;
+   padding-left: 2px;
+    }
+    .home a{color: white;text-decoration: none; }.home a:hover{color: black;}
+  footer{display: inline-flex;width: 100%;margin-top: 50%;
+background-color: rgb(82, 82, 82);font-size: 18px;font-weight: bold;padding: 30px;border: 2px black solid;height: 10px;word-spacing: 600px;letter-spacing: 2px;
+}   
+ .mezera{letter-spacing: 10px;}
+a{text-decoration: none;}
+section{ position: relative; display: inline-flex; width: 100%;padding: 20px; list-style: none;margin-left: 10px; line-height: 40px;  left: 1700px;} li a{color: aliceblue; }  
+.blackbg{font-size: 20px;letter-spacing: 2px;text-decoration: wavy,;text-transform: uppercase;font-weight: bold;position: absolute;border: white 5px double;background-color: black;border-radius: 5%;
+width: 150px;}
+.blackbg li{height: 40px;} .li1 .blackbg{width: 100%;}
+.blackbg #li1{background-color: black;}
+.li1{width: 10px;transition: 0.3s;background-color: #828f3a; } .li1:hover{width: 100%;} 
+.li2{width: 10px;transition: 0.3s;background-color: #828f3a; } .li2:hover{width: 100%;}
+.li3{width: 10px;transition: 0.3s;background-color:  #828f3a; } .li3:hover{width: 100%;}
+.li4{width: 10px;transition: 0.3s;background-color:  #828f3a; } .li4:hover{width: 100%;}
+.li5{transition: 0.5s;background-color: rgb(0, 0, 0); font-size: 18px;letter-spacing: 2px;text-decoration: underline white;text-transform: uppercase;top: 340px;
+    border: rgb(255, 255, 255) 2px double; position: absolute; display: block;padding: 1px; list-style: none;left: 1750px;color: white;padding: 10px;padding-left: 30px;padding-right: 30px;} .li5:hover a{color: rgb(126, 128, 0);} .li5:hover{font-size: 20px;}
+.li5 a{color: white;transition: 0.3s}
+
+.blackbg2{background-color: black; display: inline-block;padding: 20px;border-radius: 5%;border: 5px white solid;}
+.ON-OFF,.ppozadi{position:absolute;}
+.ON-OFF{top: 105px;left: 64px;font-weight: bold;}
+.ppozadi{background-color: black;color: white ;border: 2px white solid;font-size: 20px;letter-spacing: 2px;padding: 5px;border-radius: 30px;top: 78px;left: 15px;}
+.logout{position: absolute;display: flex;width: 30px;height: 30px;top: 20px;right: 200px;}
+.man{position: absolute;display: flex;width: 50px;height: 50px;top: 10px;right: 235px;}
+.login{position: absolute;display: flex;top: 50px;right: 237px;}
+.zdroje{display: flex;position: absolute; font-weight: bold;left: 250px;border-left: 2px black solid;border-right: 2px black solid;padding: 10px;font-size: 25px;height: 40px;padding-top: 20px;font-family: sans-serif; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;     }   
+.drop{opacity: 0%; ;display: flexbox;width: 95px;left: 250px;position:  absolute; background-color: rgb(82, 82, 82);height: 65px; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;  }
+    .drop:hover{opacity: 100%;padding-top: 10px;color: white;height: 3%;top: 60px;}
+   
+.txt{border: #828f3a 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 120px;
+    left: 630px;
+    text-align: center;
+   letter-spacing: 0.5px; 
+}
+.nadpis{font-weight: bold;
+    text-decoration: underline ;font-family: sans-serif;
+
+
+}
+.telebudka{width: 120px;
+height: 160px;
+position: absolute;
+top: 300px;
+left: 635px;
+border-radius: 5%;
+border: black 2px solid;
+
+}
+.tel{width: 120px;
+height: 160px;
+position: absolute;
+top: 300px;
+left: 773px;
+border-radius: 5%;
+border: black 2px solid;
+
+}
+.nokia{width: 120px;
+height: 160px;
+position: absolute;
+top: 300px;
+left: 910px;
+border-radius: 5%;
+border: black 2px solid;}
+
+.ihone{width: 120px;
+height: 160px;
+position: absolute;
+top: 300px;
+left: 1050px;
+border-radius: 5%;
+border: black 2px solid;}
+
+.txt2{border: #828f3a 4px solid;
+    background-color: black;
+    display: block;
+    position: absolute;
+    padding: 15px;
+    top: 480px;
+    left: 630px;
+    text-align: center;
+   letter-spacing: 0.55px; 
+   line-height: 18px;
+word-spacing: 1.3px;
+padding-left: 35px;
+padding-right: 35px;
+border-bottom:0 ;
+
+}
+   .nadpis2{text-decoration: underline;font-family: sans-serif;font-weight: bold;text-align: center;}
+.sloupec{column-count: 2;column-width: 100px;width: 50%;margin: auto;text-align: inherit;position: absolute;background-color: black;top: 670px;left: 630px;min-height: 300px;width: 461px;border: #828f3a 4px solid;border-top:0 ;padding: 35px;padding-top: 0;padding-bottom: 20px;   letter-spacing: 0.5px; 
+   line-height: 18px;}
+.nadpis3{font-size: 20px;font-weight: bold;font-family: sans-serif;text-decoration: underline; }
+   </style>
+</head>
+<body>
+    <header>
+    <div class="vid">
+        <div class="bordr">   <span class="home"><a href="index.html">IKT <br> <span class="home2">(home) </a></span></span></div>
+        <div class="zdroje">Zdroje</div>  <a href="https://en.wikipedia.org/wiki/Information_and_communications_technology" class="drop">wikipedia</a> 
+           <div class="subvid">
+                <h1>Ikt</h1> <br>
+                <h2>(Informační a komunikační technologie)</h2>  
+            </div>
+            <img src="logout.png" class="logout">
+            <img src="man.png" class="man"><span class="login"> Log in</span>
+            <div class="fakepedia"><span class="fp1">FAKE</span><span class="fp2">pedia</span></div>
+          <br>
+      </div>
+</header><br>
+
+
+<button onclick="doSomething()" class="ppozadi" >Pozastavit pozadí</button>
+<p id="test" class="ON-OFF"> [ Zapnuto ]</p>
+
+
+
+
+
+
+
+<div class="txt"><p class="nadpis"> Telefony </p>(řecky: téle = vzdálený a fóné = hlas) je telekomunikační zařízení,<br>
+     které přenáší hovor (zvuk) prostřednictvím elektrických signálů<br>
+      Pokusně se vyskytly i telefony založené na jiných principech. Klasický<br> telefon je
+       pevně instalovaným telefonním přístrojem s drátovou linkou.    </div>
+
+       <abbr title="telefoní budka"><img src="telebudka.png" class="telebudka"></abbr>
+       <abbr title="pevný telefon"><img src="tel.png" class="tel"></abbr>
+        <abbr title="nokia 3310"><img src="nokia.png" class="nokia"></abbr>
+         <abbr title="iphone 14 pro max"><img src="iphone.png" class="ihone"></abbr>
+
+<div class="txt2"><p class="nadpis2"> Mobilní telefon</p>
+    Mobilní telefon je elektronické mobilní zařízení, které umožňuje<br> uskutečňovat telefonní hovory.
+    Díky použití rádiových vln není<br> vázán na místo.Mobilní telefony poskytují kromě spojení s <br>
+     sítí také další telekomunikačních služby jako např. s SMS, MMS<br>  a připojení na internet.
+    Mezi producenty mobilních telefonů<br> patří: Apple, Huawei, Samsung, Sony, Xiaomia atd...<br>
+
+   
+
+
+</div>
+    
+<div class="sloupec">
+    <p>   <span class="nadpis3">Chytré mobily   </span>   <br>                        
+ Využívají mobilní operační systém, který umožňuje instalaci aplikací.
+     Mezi mobilní operační systémy patří např. Android nebo iOS. Světové prodeje poprvé překročily prodeje klasických 
+     mobilních telefonů na počátku roku 2013. Mezi nevýhody chytrých mobilních telefonů patří nízká výdrž baterie oproti 
+     klasickým mobilům a větší rozměry.</p>
+     
+     <p><span class="nadpis3">Tlačítkové mobily   </span>  <br>
+    Jsou většinou vybaveny nedotykovým displejem a klávesnicí. Ta může být numerická s rozložením 3×4,
+         kdy jsou písmena sdružena do skupin (zpravidla po třech)Obliba „hloupých“ mobilních telefonů klesá roku 2014 bylo v síti 
+         české pobočky operátora Vodafone 54 % mobilů tlačítkových. V lednu roku 2019 měly tlačítkové mobily zastoupení 21 %.</p>
+    </div>
+
+
+
+
+<div>
+    
+ 
+       <section>
+        <div class="blackbg">
+        <li class="li1"><a href="Index.html">DOMŮ</a></li>
+        <li class="li2"><a href="Telefony.html">Telefony</a></li>
+        <li class="li3"><a href="počítače.html">Počítače</a></li>
+        <li class="li4"><a href="Intenet.html">Internet</a></li>
+        <li class="li4"><a href="Software.html">Software</a></li>
+    </div>
+    </section>
+
+    <button class="li5"><a href="kvíz.html">kvíz</a></button>
+
+
+
+
+
+
+
+<footer> Vytvoři<span class="mezera">l</span>Jaku<span class="mezera">b</span>Hloušek              privac<span class="mezera">i</span>policy         ContactFAK<span class="mezera">E</span>pedia  </footer>
+
+</body>
+<script>
+    function doSomething(){
+                document.getElementById('test').innerHTML = " [ Vypnuto ]"
+            
+             
+                  document.querySelector('body').style.background = "url('BGY.png') center center / cover"
+       
+    }
+     
+</script>
+</html>

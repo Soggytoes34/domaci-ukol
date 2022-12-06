@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikt wikipedia</title>
+    <style>
+        html{height: 100%;}
+        body{color: white;padding: 0;margin: 0;
+        background-color: black;
+        ;background-repeat: no-repeat;background-size: cover;min-height: 120vh;flex-direction: column;display: flex;  background-image: url(BGP.gif)
+        }
+        h1{font-weight: bold;text-transform: uppercase;}
+        h1,h2{font-family: Arial, sans-serif;
+            font-style: italic;
+        text-decoration: underline ;
+        display: inline;
+        padding: 10px;
+        letter-spacing: 2px;
+        }
+        .vid{
+            text-align: center ;
+            border: 4px black solid ;
+            background-color: rgb(82, 82, 82);
+        }
+        .subvid{border-left: 3px black solid ;border-right: 3px black solid;
+        display: inline-block;padding-left: 10px;padding-right: 10px;
+        }
+        .home{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        padding-left: 18px;padding-top: 18px; padding-bottom: 8px;padding-right: 18px;border-right: 3px black solid;
+        font-size:25px ; 
+        display: inline;
+        font-weight: bold;
+        transition: 0.3s ease-in;
+       
+        background-color:rgb(82, 82, 82) ;
+       
+    }
+    .home:hover{background-color: rgb(117, 0, 111);
+    color: black;
+    }
+    .fakepedia{text-align: end;display: inline;float: right;font-size: 30px;letter-spacing: 3px;text-decoration:wavy underline rgb(0, 0, 0);padding-top: 10px;padding-right: 10px;}.fp1{color: rgb(0, 0, 0);font-family:Lucida Sans;font-weight: bold;-webkit-text-stroke-width: 1px;-webkit-text-fill-color: rgb(0, 139, 0);}.fp2{color: rgb(0, 146, 0);font-style: italic;}
+    .home2{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        
+        font-size:10px ;  
+   display: inline;
+   font-weight: bold;
+   text-align: center;
+   padding-left: 2px;
+    }
+    .home a{color: white;text-decoration: none; }.home a:hover{color: black;}
+  footer{margin-top: 1290px;display: inline-flex;width: 100%;
+background-color: rgb(82, 82, 82);font-size: 18px;font-weight: bold;padding: 30px;border: 2px black solid;height: 10px;word-spacing: 600px;letter-spacing: 2px;
+}   
+ .mezera{letter-spacing: 10px;}
+
+
+
+
+a{text-decoration: none;}
+section{ position: relative; display: inline-flex; width: 100%;padding: 20px; list-style: none;margin-left: 10px; line-height: 40px;  left: 1700px;} li a{color: aliceblue; }  
+.blackbg{font-size: 20px;letter-spacing: 2px;text-decoration: wavy,;text-transform: uppercase;font-weight: bold;position: absolute;border: white 5px double;background-color: black;border-radius: 5%;
+width: 150px;}
+.blackbg li{height: 40px;} .li1 .blackbg{width: 100%;}
+.blackbg #li1{background-color: black;}
+.li1{width: 10px;transition: 0.3s;background-color: #622d72; } .li1:hover{width: 100%;} 
+.li2{width: 10px;transition: 0.3s;background-color:#622d72; } .li2:hover{width: 100%;}
+.li3{width: 10px;transition: 0.3s;background-color:#622d72; } .li3:hover{width: 100%;}
+.li4{width: 10px;transition: 0.3s;background-color:#622d72; } .li4:hover{width: 100%;}
+.li5{transition: 0.5s;background-color: rgb(0, 0, 0); font-size: 18px;letter-spacing: 2px;text-decoration: underline white;text-transform: uppercase;top: 340px;
+    border: rgb(255, 255, 255) 2px double; position: absolute; display: block;padding: 1px; list-style: none;left: 1750px;color: white;padding: 10px;padding-left: 30px;padding-right: 30px;} .li5:hover a{color: rgb(107, 0, 128);} .li5:hover{font-size: 20px;}
+.li5 a{color: white;transition: 0.3s}
+
+.blackbg2{background-color: black; display: inline-block;padding: 20px;border-radius: 5%;border: 5px white solid;}
+
+                     
+
+.ON-OFF,.ppozadi{position:absolute;}
+.ON-OFF{top: 105px;left: 64px;font-weight: bold;}
+.ppozadi{background-color: black;color: white ;border: 2px white solid;font-size: 20px;letter-spacing: 2px;padding: 5px;border-radius: 30px;top: 78px;left: 15px;}
+
+
+
+
+
+
+          
+
+
+
+
+.logout{position: absolute;display: flex;width: 30px;height: 30px;top: 20px;right: 200px;}
+.man{position: absolute;display: flex;width: 50px;height: 50px;top: 10px;right: 235px;}
+.login{position: absolute;display: flex;top: 50px;right: 237px;}
+
+
+
+.zdroje{display: flex;position: absolute; font-weight: bold;left: 250px;border-left: 2px black solid;border-right: 2px black solid;padding: 10px;font-size: 25px;height: 40px;padding-top: 20px;font-family: sans-serif; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;     }   
+.drop{opacity: 0%; ;display: flexbox;width: 95px;left: 250px;position:  absolute; background-color: rgb(82, 82, 82);height: 65px; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;  }
+    .drop:hover{opacity: 100%;padding-top: 10px;color: white;height: 3%;top: 60px;}
+   
+
+    .txt{border: #570357 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 100px;
+    left: 350px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.nadpiss{font-size: 30px;border: 0;text-decoration: underline;font-weight: bold;font-family: sans-serif;letter-spacing: 2px;}
+.nadpis{font-weight: bold;border-bottom: 1px white solid;font-size: 25px;font-family: sans-serif
+
+}
+.txt2{border: #570357 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 100px;
+    left: 1000px;
+    text-align:justify
+
+}
+.txt3{border: #570357 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 1000px;
+    left: 690px;
+    text-align:justify
+
+}
+.txt4{border: #570357 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 600px;
+    left: 1000px;
+    text-align:justify
+}
+
+.txt5{border: #570357 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 600px;
+    left: 340px;
+    text-align:justify
+
+}
+
+
+
+.s1{width: 300px;height:150px;position: absolute;top: 400px;left: 520px;border: rgb(0, 0, 0) 2px solid;border-radius: 1rem;}
+.s2{width: 300px;height:150px;position: absolute;top: 400px;left: 1100px;border: rgb(0, 0, 0) 2px solid;border-radius: 1rem}
+.s3{width: 300px;height:150px;position: absolute;top: 830px;left: 830px;border: rgb(0, 0, 0) 2px solid;border-radius: 1rem}
+</style>
+</head>
+<body>
+    <header>
+    <div class="vid">
+        <div class="bordr">   <span class="home"><a href="index.html">IKT <br> <span class="home2">(home) </a></span></span></div>
+        <div class="zdroje">Zdroje</div>  <a href="https://en.wikipedia.org/wiki/Information_and_communications_technology" class="drop">wikipedia</a> 
+           <div class="subvid">
+                <h1>Ikt</h1> <br>
+                <h2>(Informační a komunikační technologie)</h2>  
+            </div>
+            <img src="logout.png" class="logout">
+            <img src="man.png" class="man"><span class="login"> Log in</span>
+            <div class="fakepedia"><span class="fp1">FAKE</span><span class="fp2">pedia</span></div>
+          <br>
+      </div>
+</header><br>
+
+
+<button onclick="doSomething()" class="ppozadi" >Pozastavit pozadí</button>
+<p id="test" class="ON-OFF"> [ Zapnuto ]</p>
+
+
+
+
+
+
+<div class="txt">
+    <p class="nadpiss">Software</p>
+    Je v informatice sada všech počítačových programů používaných v počítači, které  <br>
+    provádějí nějakou činnost. Software lze rozdělit na systémový software, který  <br>
+    zajišťuje chod samotného počítače a jeho styk s okolím a na aplikační software,<br>
+    se kterým buď pracuje uživatel počítače nebo zajišťuje řízení nějakého stroje<br>
+   Software je protiklad k hardwaru. Označení software se tak někdy  <br>
+   vztahuje jen na programy, ale může se vztahovat i na data.
+   
+</div>
+<abbr title="typy softwaru"><img src="s1.png" class="s1"></abbr>
+<abbr title="typy softwaru"><img src="s2.png" class="s2"></abbr>
+<div class="txt2">
+    <p class="nadpis">Škodlivý software</p>
+    Software může provádět i nezamýšlenou činnost a v takovém případě hovoříme buď<br>
+    o programátorské chybě nebo o počítačových virech, malware, spyware, trojských koních <br>
+   a podobném nežádoucím software. Důvodem existence nežádoucího software jsou zlé nebo <br>
+   nečestné úmysly jejích tvůrců, kteří zneužívají chyb ostatních software <br>
+   Běžný uživatel počítače obvykle nemá dostatečné technické znalosti, <br>
+   aby takový software rozeznal nebo dokonce zabránil v jeho činnosti.<br>
+    Proto existují antivirové programy, antispyware a další programy,<br>
+    které leží na pomezí aplikačního a systémového software a pokouší se<br>
+    činnost nežádoucího software eliminovat.
+</div>
+<abbr title="typy softwaru"><img src="s3.png" class="s3"></abbr>
+<div class="txt3">
+    <p class="nadpis">Rozdělení softwaru</p>
+    <p><i>Podle funkce můžeme software rozdělit na několik skupin:</i></p>
+    <ul>
+        <li class="lis"><b>systémový software:</b> umožňuje efektivní používání počítače</li>
+        <li class="lis"><b>firmware:</b> obsažené v hardware (BIOS, firmware vstupně-výstupních zařízení…)</li>
+        <li class="lis"><b>operační systém:</b> spravuje počítač, vytváří prostředí pro programy</li>
+        <li class="lis"><b>pomocné systémové nástroje:</b>pro správu operačního systému</li>
+        <li class="lis"><b>aplikační software:</b> umožňuje uživateli vykonávat nějakou užitečnou činnost</li>
+        <li class="lis"><b>kancelářské balíky:</b> textový editor, tabulkový procesor, prezentační program…</li>
+        <li class="lis"><b>grafické programy:</b> vektorový grafický editor, rastrový grafický editor…</li>
+        <li class="lis"><b>vývojové nástroje</b> vývojové prostředí, překladač…</li>
+        <li class="lis"><b>zábavní software:</b> počítačové hry, přehrávače digitálního zvuku a videa apod.</li>
+        <li class="lis"><b>řídící software:</b> řízení strojů, informačních systémů, vlakového provozu, apod.</li>
+
+    </ul>
+</div>
+<div class="txt4">
+
+    <p class="nadpis">Systémový software</p>
+    Systémový software je v informatice speciální programové vybavení, <br>
+    které umožňuje uživateli s počítačem pracovat, ovládat ho, spouštět <br>
+     aplikace a podobně. Systémový software se nachází na pomezí hardware <br>
+    a aplikačního software a běžný uživatel s ním přímo nepracuje (na rozdíl od aplikací).<br> 
+    Mezi systémový software patří operační systém, pomocné nástroje a firmware.
+    
+</div>
+<div class="txt5">
+    <p class="nadpis">Aplikační software </p>
+    Aplikace využívají pro interakci s uživatelem grafické nebo textové rozhraní,<br>
+    případně příkazový řádek. Aplikace se může skládat z několika počítačových programů.<br>
+   Aplikace se může skládat z několika programů, případně je několik <br>
+   aplikací spojeno do skupiny, kterou označujeme jako aplikační balíky
+   
+</div>
+
+
+
+
+
+<div>
+ 
+       <section>
+        <div class="blackbg">
+        <li class="li1"><a href="Index.html">DOMŮ</a></li>
+        <li class="li2"><a href="Telefony.html">Telefony</a></li>
+        <li class="li3"><a href="počítače.html">Počítače</a></li>
+        <li class="li4"><a href="Intenet.html">Internet</a></li>
+        <li class="li4"><a href="Software.html">Software</a></li>
+    </div>
+    </section>
+
+    <button class="li5"><a href="kvíz.html">kvíz</a></button>
+
+
+
+
+
+
+
+<footer> Vytvoři<span class="mezera">l</span>Jaku<span class="mezera">b</span>Hloušek              privac<span class="mezera">i</span>policy         ContactFAK<span class="mezera">E</span>pedia  </footer>
+
+</body>
+<script>
+    function doSomething(){
+                document.getElementById('test').innerHTML = " [ Vypnuto ]"
+            
+             
+                  document.querySelector('body').style.background = "url('BGP.png') center center / cover"
+       
+    }
+     
+</script>
+</html>

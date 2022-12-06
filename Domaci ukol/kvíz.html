@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kvíz</title>
+
+    <style>
+    body{margin: 0;
+    padding: 0;
+    background-image:url(pozadikviz.png) ;
+    background-size: cover;
+    font-family: sans-serif;
+    text-align: center;
+   
+    min-height: 100vh;
+    }
+    .konec{
+        border-radius: 1rem;
+        padding:20px ; padding-left:25px ;padding-right: 25px;
+        font-weight: bold;
+        background-color: rgb(177, 162, 202);
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .konec:hover{color: black;font-size: 25px;padding: 15px; padding-left:25px ;padding-right: 25px;}
+    div{background-color: rgb(235, 229, 245);
+    border-radius:1rem ;
+    border: solid black 4px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 15%;
+    }
+    h1{font-weight: bold;letter-spacing: 1.5px;text-decoration: underline;font-size: 40px;}
+   .bald{font-weight: bold;}
+   .home{position: absolute;left: 10px;top: 10px;padding: 
+    30px;background-color: rgb(163, 123, 163);border: 3px black solid;font-size: 20px;border-radius: 1rem;transition: 0.5s;}
+    a{color: black;text-decoration: none;} .home:hover{font-size: 30px;color: white;background-color:rgb(65, 43, 65) ;border-radius: 0;padding:20px ;}
+    .cervena{color: red;}
+    .visledek{font-weight: bold;}
+   
+   </style>
+
+        <script>
+function check() {
+    var c=0;
+    var q1=document.kvíz.otazka1.value;
+    var q2=document.kvíz.otazka2.value;
+    var q3=document.kvíz.otazka3.value;
+    var q4=document.kvíz.otazka4.value;
+    var q5=document.kvíz.otazka5.value;
+    var vysledek=document.getElementById("vysledek");
+    var kvíz=document.getElementById("kvíz");
+    if (q1=="Software") {c++}
+    if (q2=="spravna") {c++}
+    if (q3=="good") {c++}
+    if (q4=="anospravne") {c++}
+    if (q5=="😎") {c++}
+   kvíz.textContent=`${c}`;
+   vysledek.textContent=`${c}`;
+
+   if (c<=1) {
+    kvíz.textContent=`Tvuj vysledek je ${c}.  `
+    } 
+    if (c<=0) {
+    kvíz.textContent=`Tvuj vysledek je ${c}.  `
+    }  
+        
+    
+    if (c<=2) {
+        kvíz.textContent=`Tvuj vysledek je ${c} . `
+} 
+
+if (c<=3) {
+    vysledek.textContent=`Tvuj vysledek je ${c}. ` 
+} 
+
+if (c<=4) {
+    kvíz.textContent=`Tvuj vysledek je ${c}. `  
+} 
+
+if (c<=5) {
+    kvíz.textContent=`Tvuj vysledek je ${c}. `  
+} 
+
+
+
+}
+       </script>
+</head>
+<body>
+    <a href="Index.html" class="home">Domů</a>
+    <h1>Kvíz na znalosti z IKT</h1>
+    
+    <form name="kvíz" id="kvíz">
+       <div>
+           <p class="bald">1. Co je aplikace</p>
+           <p><input type="radio"name="otazka1" value="Hardware">A. Hardware</p>
+           <p><input type="radio"name="otazka1" value="Software">B. Software</p>
+           <p><input type="radio"name="otazka1" value="Firmware">C. Firmware</p>
+           <p><input type="radio"name="otazka1" value="Netware">D. Netware</p>
+        </div>
+
+        <div>
+            <p class="bald">2. K čemu byl vytvořen <abbr title="Počítač">PC</abbr></p>
+            <p><input type="radio"name="otazka4" value="anospravne">A. Počítat</p>
+            <p><input type="radio"name="otazka4" value="nn">B. Roblox</p>
+            <p><input type="radio"name="otazka4" value="nn">C. Násobit </p>
+            <p><input type="radio"name="otazka4" value="nn">D. YouTube</p>
+         </div>
+
+        <div>
+            <p class="bald">3. Známá telefoní firma je...</p>
+            <p><input type="radio"name="otazka2" value="spatna">A. Xiamoi</p>
+            <p><input type="radio"name="otazka2" value="spatna">B. Xaiomi</p>
+            <p><input type="radio"name="otazka2" value="spatna">C. Xiamovi</p>
+            <p><input type="radio"name="otazka2" value="spravna">D. Xiaomi</p>
+         </div>
+         <div>
+            <p class="bald">4. Co <span class="cervena">není</span> typ škodlivého softwaru</p>
+            <p><input type="radio"name="otazka5" value="bad">A. Trojan </p>
+            <p><input type="radio"name="otazka5" value="bad">B. worm</p>
+            <p><input type="radio"name="otazka5" value="😎">C. Ransomeware</p>
+            <p><input type="radio"name="otazka5" value="bad">D. spyware</p>
+         </div>
+
+         <div>
+            <p class="bald">5. O kvalitě zapojení internetu rozhoduje</p>
+            <p><input type="radio"name="otazka3" value="spatna">A. rychlost počítače</p>
+            <p><input type="radio"name="otazka3" value="good">B. agregace</p>
+            <p><input type="radio"name="otazka3" value="spatna">C. Fortnite live event</p>
+            <p><input type="radio"name="otazka3" value="spatna">D. velikost routeru</p>
+         </div>
+
+       
+  
+          <input type="button" name="" value="Dokončit" onclick="check()"class="konec">
+       <p id="vysledek" class="visledek"></p>
+    </form>
+</body>
+</html>

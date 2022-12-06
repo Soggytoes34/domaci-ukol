@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikt wikipedia</title>
+    <style>
+        html{height: 100%;}
+        body{color: white;padding: 0;margin: 0;
+        background-color: black;
+        ;background-repeat:repeat ;background-size: cover;min-height: 120vh;flex-direction: column;display: flex;  background-image: url(BGR.gif)
+        }
+        h1{font-weight: bold;text-transform: uppercase;}
+        h1,h2{font-family: Arial, sans-serif;
+            font-style: italic;
+        text-decoration: underline ;
+        display: inline;
+        padding: 10px;
+        letter-spacing: 2px;
+        }
+        .vid{
+            text-align: center ;
+            border: 4px black solid ;
+            background-color: rgb(82, 82, 82);
+        }
+        .subvid{border-left: 3px black solid ;border-right: 3px black solid;
+        display: inline-block;padding-left: 10px;padding-right: 10px;
+        }
+        .home{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        padding-left: 18px;padding-top: 18px; padding-bottom: 8px;padding-right: 18px;border-right: 3px black solid;
+        font-size:25px ; 
+        display: inline;
+        font-weight: bold;
+        transition: 0.3s ease-in;
+       
+        background-color:rgb(82, 82, 82) ;
+       
+    }
+    .home:hover{background-color: rgb(117, 0, 0);
+    color: black;
+    }
+    .fakepedia{text-align: end;display: inline;float: right;font-size: 30px;letter-spacing: 3px;text-decoration:wavy underline rgb(0, 0, 0);padding-top: 10px;padding-right: 10px;}.fp1{color: rgb(0, 0, 0);font-family:Lucida Sans;font-weight: bold;-webkit-text-stroke-width: 1px;-webkit-text-fill-color: rgb(0, 139, 0);}.fp2{color: rgb(0, 146, 0);font-style: italic;}
+    .home2{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        
+        font-size:10px ;  
+   display: inline;
+   font-weight: bold;
+   text-align: center;
+   padding-left: 2px;
+    }
+    .home a{color: white;text-decoration: none; }.home a:hover{color: black;}
+  footer{margin-top: 650px;display: inline-flex;width: 100%;margin-top: 1700px;
+background-color: rgb(82, 82, 82);font-size: 18px;font-weight: bold;padding: 30px;border: 2px black solid;height: 10px;word-spacing: 600px;letter-spacing: 2px;
+}   
+ .mezera{letter-spacing: 10px;}
+
+
+
+
+a{text-decoration: none;}
+section{ position: relative; display: inline-flex; width: 100%;padding: 20px; list-style: none;margin-left: 10px; line-height: 40px;  left: 1700px;} li a{color: aliceblue; }  
+.blackbg{font-size: 20px;letter-spacing: 2px;text-decoration: wavy,;text-transform: uppercase;font-weight: bold;position: absolute;border: white 5px double;background-color: black;border-radius: 5%;
+width: 150px;}
+.blackbg li{height: 40px;} .li1 .blackbg{width: 100%;}
+.blackbg #li1{background-color: black;}
+.li1{width: 10px;transition: 0.3s;background-color: #722d2d; } .li1:hover{width: 100%;} 
+.li2{width: 10px;transition: 0.3s;background-color: #722d2d; } .li2:hover{width: 100%;}
+.li3{width: 10px;transition: 0.3s;background-color: #722d2d; } .li3:hover{width: 100%;}
+.li4{width: 10px;transition: 0.3s;background-color:#722d2d ; } .li4:hover{width: 100%;}
+.li5{transition: 0.5s;background-color: rgb(0, 0, 0); font-size: 18px;letter-spacing: 2px;text-decoration: underline white;text-transform: uppercase;top: 340px;
+    border: rgb(255, 255, 255) 2px double; position: absolute; display: block;padding: 1px; list-style: none;left: 1750px;color: white;padding: 10px;padding-left: 30px;padding-right: 30px;} .li5:hover a{color: rgb(107, 0, 0);} .li5:hover{font-size: 20px;}
+.li5 a{color: white;transition: 0.3s}
+
+.blackbg2{background-color: black; display: inline-block;padding: 20px;border-radius: 5%;border: 5px white solid;}
+
+                     
+
+.ON-OFF,.ppozadi{position:absolute;}
+.ON-OFF{top: 105px;left: 64px;font-weight: bold;}
+.ppozadi{background-color: black;color: white ;border: 2px white solid;font-size: 20px;letter-spacing: 2px;padding: 5px;border-radius: 30px;top: 78px;left: 15px;}
+
+
+
+
+
+
+          
+
+
+
+
+.logout{position: absolute;display: flex;width: 30px;height: 30px;top: 20px;right: 200px;}
+.man{position: absolute;display: flex;width: 50px;height: 50px;top: 10px;right: 235px;}
+.login{position: absolute;display: flex;top: 50px;right: 237px;}
+
+
+
+.zdroje{display: flex;position: absolute; font-weight: bold;left: 250px;border-left: 2px black solid;border-right: 2px black solid;padding: 10px;font-size: 25px;height: 40px;padding-top: 20px;font-family: sans-serif; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;     }   
+.drop{opacity: 0%; ;display: flexbox;width: 95px;left: 250px;position:  absolute; background-color: rgb(82, 82, 82);height: 65px; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;  }
+    .drop:hover{opacity: 100%;padding-top: 10px;color: white;height: 3%;top: 60px;}
+   
+    .txt{border: #580404 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 100px;
+    left: 500px;
+    text-align: center;
+    word-spacing:0.5px ;
+    letter-spacing: 1.2px;
+    line-height:19px ;
+}
+.nadpis{font-weight: bold;text-decoration: underline;font-family: sans-serif;font-size: 25px;letter-spacing: 2px;
+
+}
+.txt2{border: #580404 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 500px;
+    left: 570px;
+    text-align: justify;
+    word-spacing:0.5px ;
+    letter-spacing: 1.2px;
+    line-height:19px ;}
+.nadpis2{font-weight: bold;font-family: sans-serif;font-size: 22px;letter-spacing: 2px;border-bottom: 2px white solid;padding-bottom: 2px;}
+
+
+
+.wifi{width: 230px;height: 150px;border-radius: 10%;border: black 2px solid;position: absolute;left: 780px;top: 340px;}
+.web{width: 230px;height: 150px;border-radius: 10%;border: black 2px solid;position: absolute;left: 1050px;top: 340px;}
+.sm{width: 230px;height: 150px;border-radius: 10%;border: black 2px solid;position: absolute;left: 500px;top: 340px;}
+
+.lis{list-style:square;}
+.txt3{border: #580404 4px solid;
+    background-color: black;
+    display: flexbox;
+    position: absolute;
+    padding: 20px;
+    top: 1200px;
+    left: 500px;
+    text-align: justify;
+    word-spacing:0.5px ;
+    letter-spacing: 1.2px;
+    line-height:19px ;}
+    .sit{width: 250px;height: 200px;border-radius: 15%;border: black 2px solid;position: absolute;left: 480px;top: 990px;}
+    .int{width: 280px;height: 200px;border-radius: 15%;border: black 2px solid;position: absolute;left: 740px;top: 990px;}
+    .int2{width: 250px;height: 200px;border-radius: 15%;border: black 2px solid;position: absolute;left: 1030px;top: 990px;}
+    .pod{border-bottom:white 0.5px solid ;padding-bottom: 2px;display: block;}
+   </style>
+</head>
+<body>
+    <header>
+    <div class="vid">
+        <div class="bordr">   <span class="home"><a href="index.html">IKT <br> <span class="home2">(home) </a></span></span></div>
+        <div class="zdroje">Zdroje</div>  <a href="https://en.wikipedia.org/wiki/Information_and_communications_technology" class="drop">wikipedia</a> 
+           <div class="subvid">
+                <h1>Ikt</h1> <br>
+                <h2>(Informační a komunikační technologie)</h2>  
+            </div>
+            <img src="logout.png" class="logout">
+            <img src="man.png" class="man"><span class="login"> Log in</span>
+            <div class="fakepedia"><span class="fp1">FAKE</span><span class="fp2">pedia</span></div>
+          <br>
+      </div>
+</header><br>
+
+
+<button onclick="doSomething()" class="ppozadi" >Pozastavit pozadí</button>
+<p id="test" class="ON-OFF"> [ Zapnuto ]</p>
+
+<div class="txt"><p class="nadpis">Internet</p>Internet je celosvětový systém propojených počítačových sítí, ve kterých mezi sebou počítače je<br>
+    komunikují pomocí rodiny protokolů TCP/IP. Společným cílem všech lidí využívajících internet<br>
+    bezproblémová komunikace. Nejznámější službou poskytovanou v internetu je WWW a e-mail.<br>
+   Internet jsou volně propojené počítačové sítě, které spojují jeho jednotlivé síťové uzly. Uzlem<br>
+    může být počítač, ale i specializované zařízení (například router). Každý počítač připojený k <br>
+   internetu má v rámci rodiny protokolů TCP/IP svojí IP adresou. </div>
+
+<div>
+    
+ 
+       <section>
+        <div class="blackbg">
+        <li class="li1"><a href="Index.html">DOMŮ</a></li>
+        <li class="li2"><a href="Telefony.html">Telefony</a></li>
+        <li class="li3"><a href="počítače.html">Počítače</a></li>
+        <li class="li4"><a href="Intenet.html">Internet</a></li>
+        <li class="li4"><a href="Software.html">Software</a></li>
+    </div>
+    </section>
+    <button class="li5"><a href="kvíz.html">kvíz</a></button>
+
+ <abbr title="vyhledávaní"><img src="web.png" class="web"></abbr>
+ <abbr title="znak wifi"><img src="wifi.png" class="wifi"></abbr>
+ <abbr title="sociální sítě"><img src="SM.png" class="sm"></abbr>   
+<div class="txt2">
+    <p class="nadpis2">Sociální sítě</p>
+    Sociální sítě se jsou novým komunikačním kanálem. <br>
+    Pomocí sociálních sítí se prostřednictvím internetu<br>
+     sdružují lidé, kteří by se jinak fyzicky nemohli setkat.<br>
+     V současné době prožívají sociální<br>
+     sítě rychlý rozvoj, který je urychlován každým rokem.<br>
+     Účel sociálních sítí se různí, některé slouží ke sdílení informací a k zábavě,<br>
+     <ul>
+ <p><i>    jiné pomáhají hledat práci. Známé sociální sítě jsou například:</i></p>
+     
+      <li class="lis">Facebook</li>  
+      <li class="lis">Twitter</li>  
+      <li class="lis">Discord</li>  
+      <li class="lis">WeChat</li>  
+      <li class="lis">YouTube</li>  
+      <li class="lis">LinkedIn</li>  
+      <li class="lis">Reddit</li>  
+      <li class="lis">Instagram</li>  
+      <li class="lis">Snapchat</li>  
+      <li class="lis">TikTok</li>  
+     </ul>
+</div>
+
+
+<abbr title="internet"><img src="Internet.png" class="int"></abbr>
+<abbr title="internet"><img src="Internet2.png" class="int2"></abbr>
+<abbr title="síť"><img src="sit.png" class="sit"></abbr> 
+
+
+
+
+<div class="txt3">
+    <p class="nadpis2">Způsoby připojení k internetu</p>
+    Mezinárodní dálkové spoje dosahují v internetu velmi vysokých přenosových rychlostí<br>
+Samotné připojení uživatelů je realizováno různými technologiemi. Uživatelé se někdy<br>
+ spojují do skupin, aby ušetřili náklady nebo naopak dosáhli na dražší, ale rychlejší připojení.<br>
+
+<p><i class="pod"> V současnosti existuje několik možností pro připojení počítače k internetu:</i></p>
+<ul>
+<li class="lis">telefonní linka</li>
+<li class="lis">dříve se používalo vytáčené připojení</li>
+<li class="lis">kabelová přípojka</li>
+<li class="lis">bezdrátová datová síť</li>
+<li class="lis">satelitní síť</li>
+<li class="lis">mobilní telefonní síť</li>
+<li class="lis">Wi-Fi</li>
+<li class="lis">elektrická rozvodná síť</li>
+</ul>
+<i class="pod">O kvalitě připojení rozhoduje:</i>
+<ul>
+    <li class="lis">agregace (tj. kolik uživatelů sdílí jednu linku)</li>
+    <li class="lis">doba odezvy</li>
+    <li class="lis">rychlost připojení poslední míle</li>
+    <li class="lis">technologie použitá pro připojení</li>
+</ul>
+
+</div>
+
+
+
+<footer> Vytvoři<span class="mezera">l</span>Jaku<span class="mezera">b</span>Hloušek              privac<span class="mezera">i</span>policy         ContactFAK<span class="mezera">E</span>pedia  </footer>
+
+</body>
+<script>
+    function doSomething(){
+                document.getElementById('test').innerHTML = " [ Vypnuto ]"
+            
+             
+                  document.querySelector('body').style.background = "url('BGR.png') center center / cover"
+       
+    }
+     
+</script>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikt wikipedia</title>
+    <style>
+        html{height: 100%;}
+        body{color: white;padding: 0;margin: 0;
+        background-color: black;
+        ;background-repeat: no-repeat;background-size: cover;min-height: 107vh;flex-direction: column;display: flex;  background-image: url(pozadi.gif)
+        }
+        h1{font-weight: bold;text-transform: uppercase;}
+        h1,h2{font-family: Arial, sans-serif;
+            font-style: italic;
+        text-decoration: underline ;
+        display: inline;
+        padding: 10px;
+        letter-spacing: 2px;
+        }
+        .vid{
+            text-align: center ;
+            border: 4px black solid ;
+            background-color: rgb(82, 82, 82);
+        }
+        .subvid{border-left: 3px black solid ;border-right: 3px black solid;
+        display: inline-block;padding-left: 10px;padding-right: 10px;
+        }
+        .home{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        padding-left: 18px;padding-top: 18px; padding-bottom: 8px;padding-right: 18px;border-right: 3px black solid;
+        font-size:25px ; 
+        display: inline;
+        font-weight: bold;
+        transition: 0.3s ease-in;
+       
+        background-color:rgb(82, 82, 82) ;
+       
+    }
+    .home:hover{background-color: rgb(0, 117, 6);
+    color: black;
+    }
+.fakepedia{text-align: end;display: inline;float: right;font-size: 30px;letter-spacing: 3px;text-decoration:wavy underline rgb(0, 0, 0);padding-top: 10px;padding-right: 10px;}.fp1{color: rgb(0, 0, 0);font-family:Lucida Sans;font-weight: bold;-webkit-text-stroke-width: 1px;-webkit-text-fill-color: rgb(0, 139, 0);}.fp2{color: rgb(0, 146, 0);font-style: italic;}
+    .home2{font-family: monospace,cursive,fantasy,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        float: left;
+        
+        font-size:10px ;  
+   display: inline;
+   font-weight: bold;
+   text-align: center;
+   padding-left: 2px;
+    }
+.home a{color: white;text-decoration: none; }.home a:hover{color: black;}
+  footer{margin-top: 650px;display: inline-flex;
+background-color: rgb(82, 82, 82);font-size: 18px;font-weight: bold;padding: 30px;border: 2px black solid;height: 10px;word-spacing: 600px;letter-spacing: 2px;
+}  .mezera{letter-spacing: 10px;}
+.txt{
+margin-top: 100px; margin: 6px;text-align: center;display: block;margin-right: 100px;
+
+}
+
+.nadpis{font-size: 30px; text-decoration: underline;letter-spacing: 2px; }
+a{text-decoration: none;}
+section{ position: relative; display: inline-flex; width: 100%;padding: 20px; list-style: none;margin-left: 10px; line-height: 40px;  left: 1700px;} li a{color: aliceblue; }  
+.blackbg{font-size: 20px;letter-spacing: 2px;text-decoration: wavy,;text-transform: uppercase;font-weight: bold;position: absolute;border: white 5px double;background-color: black;border-radius: 5%;
+width: 150px;}
+.blackbg li{height: 40px;} .li1 .blackbg{width: 100%;}
+.blackbg #li1{background-color: black;}
+.li1{width: 10px;transition: 0.3s;background-color: rgb(45, 114, 51); } .li1:hover{width: 100%;} 
+.li2{width: 10px;transition: 0.3s;background-color: rgb(45, 114, 51); } .li2:hover{width: 100%;}
+.li3{width: 10px;transition: 0.3s;background-color: rgb(45, 114, 51); } .li3:hover{width: 100%;}
+.li4{width: 10px;transition: 0.3s;background-color: rgb(45, 114, 51); } .li4:hover{width: 100%;}
+.li5{transition: 0.5s;background-color: rgb(0, 0, 0); font-size: 18px;letter-spacing: 2px;text-decoration: underline white;text-transform: uppercase;top: 350px;
+    border: rgb(255, 255, 255) 2px double; position: absolute; display: block;padding: 1px; list-style: none;left: 1750px;color: white;padding: 10px;padding-left: 30px;padding-right: 30px;} .li5:hover a{color: green;} .li5:hover{font-size: 20px;}
+.li5 a{color: white;transition: 0.3s}
+
+.blackbg2{background-color: black; display: inline-block;padding: 20px;border-radius: 1em;border: 5px white solid;}
+
+                        .obrazek{width: 500px; height: 300px; display: flex;position: absolute;top: 300px;left: 655px;border-radius: 1em;border: 2px black solid;text-align: left;} .ulu{list-style: none;text-align: left;}
+
+.ON-OFF,.ppozadi{position:absolute;}
+.ON-OFF{top: 105px;left: 64px;font-weight: bold;}
+.ppozadi{background-color: black;color: white ;border: 2px white solid;font-size: 20px;letter-spacing: 2px;padding: 5px;border-radius: 30px;top: 78px;left: 15px;}
+
+
+.TXT2{text-align:justify;background-color: black;border: white 5px solid; border-radius: 1em; display: flexbox;position: absolute;top: 630px;left: 620px;padding: 20px;}
+
+.FF{text-decoration:underline dashed white ;font-weight: bold;text-transform: uppercase;letter-spacing: 3px;text-align: left;}
+
+               .zajimavosti{background-color: black;border: 4px white solid;border-radius: 20px;display: flexbox;position: absolute;padding: 10px;top: 950px;padding-left: 20px; list-style: none;left: 100px;}
+
+.pp2{position: absolute; display: flex;width: 400px;height: 200px;bottom: 400px;left: 220px; border-radius: 1em;border: 2px black solid;}
+.mobilbg{position: absolute;display: flex;width: 400px;height: 200px;bottom: 400px;left: 1180px; border-radius: 1em;border: 2px black solid;}
+
+.logout{position: absolute;display: flex;width: 30px;height: 30px;top: 20px;right: 200px;}
+.man{position: absolute;display: flex;width: 50px;height: 50px;top: 10px;right: 235px;}
+.login{position: absolute;display: flex;top: 50px;right: 237px;}
+
+
+.lil{font-size: 10;}.lil1{font-size: 10;}.lil2{font-size: 10;}
+.zdroje{display: flex;position: absolute; font-weight: bold;left: 250px;border-left: 2px black solid;border-right: 2px black solid;padding: 10px;font-size: 25px;height: 40px;padding-top: 20px;font-family: sans-serif; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;     }   
+.drop{opacity: 0%; ;display: flexbox;width: 95px;left: 250px;position:  absolute; background-color: rgb(82, 82, 82);height: 65px; border-left: 2px rgb(0, 0, 0) solid ;  border-right: 2px rgb(0, 0, 0) solid ;  border-bottom: 2px rgb(0, 0, 0) solid ;  }
+    .drop:hover{opacity: 100%;padding-top: 10px;color: white;height: 3%;top: 60px;}
+   
+    .pismeno{font-size: 40px;font-weight: bold;font-family: serif;}
+   .odstavec{line-height: 20px;}
+   </style>
+</head>
+<body>
+    <header>
+    <div class="vid">
+        <div class="bordr">   <span class="home"><a href="index.html">IKT <br> <span class="home2">(home) </a></span></span></div>
+        <div class="zdroje">Zdroje</div>  <a href="https://en.wikipedia.org/wiki/Information_and_communications_technology" class="drop">wikipedia</a> 
+           <div class="subvid">
+                <h1>Ikt</h1> <br>
+                <h2>(Informační a komunikační technologie)</h2>  
+            </div>
+            <img src="logout.png" class="logout">
+            <img src="man.png" class="man"><span class="login"> Log in</span>
+            <div class="fakepedia"><span class="fp1">FAKE</span><span class="fp2">pedia</span></div>
+          <br>
+      </div>
+</header><br>
+
+
+<button onclick="doSomething()" class="ppozadi" >Pozastavit pozadí</button>
+<p id="test" class="ON-OFF"> [ Zapnuto ]</p>
+
+
+<div>
+    
+ 
+       <section>
+        <div class="blackbg">
+        <li class="li1"><a href="Index.html">DOMŮ</a></li>
+        <li class="li2"><a href="Telefony.html">Telefony</a></li>
+        <li class="li3"><a href="počítače.html">Počítače</a></li>
+        <li class="li4"><a href="Intenet.html">Internet</a></li>
+        <li class="li4"><a href="Software.html">Software</a></li>
+    </div>
+</section>
+        <button class="li5"><a href="kvíz.html">kvíz</a></button>
+  
+
+
+  <span class="txt"><div class="blackbg2"> <span class="nadpis">IKT</span> <br> Informační a komunikační technologie, zkráceně IKT je sjednocení <br>telekomonikačních zařízeních(počítačů a telefonů atd...). Uživatelům <br>umožňuje přístup, ukládání, přenos informací </span></div>
+
+</div>
+
+<abbr title="odvětví IKT"><img src="a.jpg" class="obrazek"></abbr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="TXT2"><p><span class="pismeno">I</span>Kt se také používá k označení konvergence audiovizuálních a telefonních<br> <span class="odstavec"> sítí s počítačovými sítěmi prostřednictvím jediné kabeláže nebo<br>spojovacího systému. </p>
+                                                   IKT je jedním z nejdynamičtěji se vyvíjejícím odvětvím společnosti. Zahrnuje práci<br>s hardwarem softwerem a netwerem
+<p><ul>
+    <li>hardware = technické zázemí IT;</li>
+    <li>software = programové vybavení IT;</li>
+    <li>netware = problematika počítačových sítí.</li>
+</ul></p>
+<p>
+       V dnešní době je společnost závislá na informačních a komunikačních technologií,<br> bez IKT by nechungovali úřady, obchody, banky, zdravotnictví, doprava,<br>s průmyslová výroba atd...
+</p>
+</span> </div>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="zajimavosti">
+
+
+    <span class="ulu"> <div class="FF">
+        <p> Zajímavosti</p>
+        
+        </div>   
+    
+   <ol>   
+<li class="lil"><p>Ročně se za IT světově utratí US$3.8 trillion </p>
+     </li>
+<li class="lil1"><p>Vývoj IKT se zvyšuje každý rok o 16-20%</p> </li>
+<li class="lil2">První počítač vážil 27 Tun</li>
+<li class="lil2"><p>Právě je 5.5 miliard aktivních uživatelů a,<br> 
+                  200 milionů aktivních stránek</p> </li>
+</ol>
+    </span>
+</div>
+
+    <abbr title="electronika"><img src="pozadi 2.png" class="pp2"></abbr>
+    <abbr title="moderní chytré telefony"><img src="mobil.png" class="mobilbg"></abbr>
+
+
+
+
+
+<footer> Vytvoři<span class="mezera">l</span>Jaku<span class="mezera">b</span>Hloušek              privac<span class="mezera">i</span>policy         ContactFAK<span class="mezera">E</span>pedia  </footer>
+
+</body>
+<script>
+    function doSomething(){
+                document.getElementById('test').innerHTML = " [ Vypnuto ]"
+            
+             
+                  document.querySelector('body').style.background = "url('pozadi.png') center center / cover"
+       
+    }
+     
+</script>
+</html>
