@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfricanExplores</title>
+    <style>
+        body{
+            margin: 0; 
+            padding: 0%;
+            min-height: 100vh;
+            box-sizing: border-box;
+            background-image: url(background.webp);
+           
+            
+        }
+          a{color: black;}
+
+        header{width: 100%;
+              background-image: linear-gradient(rgb(175, 175, 243),rgb(71, 59, 138));
+              height: 80px;
+              border-bottom:2px solid black ; 
+        }
+        .logo{position: absolute; 
+            width: 60px
+            ;left: 100px;
+            top: 15px;
+        }
+        .menu{
+            width: 45px;
+             height: 5px;
+             background-color: black;
+             margin-top: 0px;
+         display: inline-block;
+             
+             margin-left: 30px;
+        }
+        .cestovani{font-size: 30px;font-family: sans-serif; display: flex; }
+
+.ce::after{content: "";background-color: rgb(0, 0, 0);height: 3px;width: 100%;position: absolute;left: 0%;bottom: -5px;}
+.pr:hover::after{width: 100%;}
+.pr::after{content: "";background-color: rgb(184, 0, 0);height: 3px;width: 0%;position: absolute;left: 0%;bottom: -5px;transition: 0.3s;}
+.ub:hover::after{width: 100%;}
+.ub::after{content: "";background-color: rgb(184, 0, 0);height: 3px;width: 0%;position: absolute;left: 0%;bottom: -5px;transition: 0.3s;}
+.na:hover::after{width: 100%;}
+.na::after{content: "";background-color: rgb(184, 0, 0);height: 3px;width: 0%;position: absolute;left: 0%;bottom: -5px;transition: 0.3s;}
+.za:hover::after{width: 100%;}
+.za::after{content: "";background-color: rgb(184, 0, 0);height: 3px;width: 0%;position: absolute;left: 0%;bottom: -5px;transition: 0.3s;}
+        .pr{ left: 800px;position: absolute;top: 20px; } 
+        .ub{ left: 570px;position: absolute;top: 20px;}
+       .na{left: 400px;position: absolute;top: 20px;}   
+       .ce{left: 190px;position: absolute;top: 20px;padding: 0 10px;}     
+       .za{left: 1050px;position: absolute;top: 20px;}       
+       .onas{width: 66%;height: 1100px;background-image: linear-gradient(rgb(173, 140, 108),rgb(90, 70, 112));margin-left: 300px;margin-right: 300px;border-top: #807d7d solid 10px;border-bottom: #807d7d solid 10px;}
+
+       h1{text-align: center;margin-top: 0px;padding-top: 30px;font-weight: bold;font-family: 'Times New Roman', Times, serif;text-decoration: underline;font-size: 40px;}
+       .text{font-size: 23px;text-align: justify;margin: 20px;font-family: sans-serif;}
+       .letad{float: right;width: 540px;border-radius: 1em;border: 1px black solid;}
+       .lvl1{width: 200px;height: 300px;background-image:url(letadlo3.jpg);border-radius: 1em;margin-top: 300px;margin-bottom: 50px;border: 1px black solid;position: absolute;} 
+       .text1{margin-left:40px ;background-color: rgba(151, 171, 189, 0.452);display: inline;}
+       .text2{margin-left: 40px;background-color: #62697c75;display: inline;padding: 5px;border-radius: 1em;font-weight: bold;} .text2:hover{color: yellow; transition:2s;}
+       .lvl2{width: 200px;height: 300px;background-image:url(letadlo7.jpg);border-radius: 1em;margin-top: 300px;margin-bottom: 50px;border: 1px black solid;position: absolute; left: 750px;}
+        .lvl3{width: 200px;height: 300px;background-image:url(letadlo4.jpg);border-radius: 1em;margin-top: 300px;margin-bottom: 50px;border: 1px black solid;position: absolute; left: 1200px;}
+        footer{
+            height: 60px;
+            width: 100%;
+            background-color: #000000;
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            border-top: rgb(255, 254, 254) 1px solid;
+        }                                                             .f1{margin-left: 300px;margin-top: 20px;}  .f2{margin-left: 350px;margin-top: 20px;} .f3{margin-left: 350px;margin-top: 20px;} 
+  
+        
+        .cernoch{width: 500px;float: right;border-radius: 1em;}
+        .letenkalvl1{position: absolute;font-size: 20px;left: 350px; top: 950px;}
+        .letenkalvl2{position: absolute;font-size: 20px;left: 800px; top: 950px;}
+        .letenkalvl3{position: absolute;font-size: 20px;left: 1250px; top: 950px;}
+       .star{position: absolute;width: 20px;right: 150px;}
+       .star2{position: absolute;width: 20px;right: 170px;}
+       .star3{position: absolute;width: 20px;right: 130px;}
+       .nabidky{position: absolute;top: 550px;left: 330px; font-size: 50px;text-decoration: underline;font-weight: bold;font-family: 'Times New Roman', Times, serif;}
+       .blink{transform: translate(50%,50%);animation:blink 5s linear infinite ; -webkit-text-stroke:  rgb(0, 0, 0) 0.1px;}  @keyframes blink{0%{opacity: 0; color: red;} 90%{opacity: 5; color: yellow;} 80%{opacity: 2;color: blue;} 70%{opacity: 6;color:palevioletred;}60%{opacity: 3;color: green;}}
+       .afrikapng{position: absolute;right: 23PX;width: 119.5px;border-radius: 0.4rem;}
+       .yess{font-weight: bold;position: absolute;margin-top: 70px;font-size: 20px;}
+       .yes{font-weight: normal;}
+   </style>
+</head>
+<body>
+  <header>
+    <img src="afrika.png" class="afrikapng">
+        <img src="logo.png" alt="" class="logo">
+    
+    <br>
+        <div class="menu"></div>
+<br>
+        <div class="menu"></div>
+        <br>
+        <div class="menu"></div>
+    
+        <div class="cestovani">
+    <a href="index.html"> <div class="ce">     Cestování</div> </a> 
+    <a href="pronajemotroku.html"> <div class="pr">  Pronájem otroků</div> </a>
+    <a href="ubytovani.html"> <div class="ub"> Co po odletu</div></a>
+    <a href="jakprezit.html"> <div class="na">  Jak přežít</div></a>
+    <a href="pribehyzakazniku.html"> <div class="za"> Příběhy zákazníků</div></a>
+        </div>
+  </header>
+
+  <div class="onas">
+    <h1>O nás</h1>
+<div class="text">
+   Jsme nezávyslá firma která umožňuje cestování po Africe. Kochejte se nádrherou divočiny, protože máte pobyt do konce svého života.
+    Po přistání vám zapalíme dům. Budete muset se naučit místní řeč, a farmařit na poli aby jste se uživili.<img src="cernoch.jpg" class="cernoch"> </img> Toto je dobročiný projekt který pomáha proti imigraci.<br> <br> Objevte kultutru vesničanů, kupujte otroky a vylepšujte vesnici. 
+  <div class="yess">Proč? <div class="yes">-Proč ne<br>-žádná škola<br>-novej život </div></div>
+    <div class="nabidky">Nabídky</div>
+
+    
+
+   <a href="letenky1.html"> <div class="lvl1"><div class="text1">Letenka lvl1</div>
+    <br>  <br>  <br>  <br>  <br>  <br> <span class="cena">cena:</span> <br>  
+    <div class="text2">,-2000kč</div>
+      <div class="blink">Koupit...</div>
+    </div> </a>
+
+  <a href="letenka2.html">  <div class="lvl2"><div class="text1">Letenka lvl2</div>
+    <br>  <br>  <br>  <br>  <br>  <br> <span class="cena">cena:</span> <br>  
+    <div class="text2">,-3999kč</div>
+    <div class="blink">Koupit...</div>
+  </div></a>
+
+   <a href="letenka3.html"> <div class="lvl3"><div class="text1">Letenka lvl3</div>
+    <br>  <br>  <br>  <br>  <br>  <br> <span class="cena">cena:</span> <br>
+    <div class="text2">,-7999kč</div>
+    <div class="blink">Koupit...</div>
+  </div></a>
+    </div>
+  </div>
+<div class="letenkalvl1">
+<img src="star.png" class="star"> <b>Základní letenka </b>
+<br>-bez ničeho
+<br>-ekonomicka třida
+<br>-zpaleni domu
+</div>
+<div class="letenkalvl2">
+  <img src="star.png" class="star"><img src="star.png" class="star2"> <b> LvL2 letenka </b>
+    <br>  -bez ničeho
+    <br>  -2 třida
+    <br>  -zpaleni domu
+    <br>  -očkovani 
+    <br> -slovnik
+    </div>
+    <div class="letenkalvl3">
+      <img src="star.png" class="star"><img src="star.png" class="star2"><img src="star.png" class="star3">  <b> LvL3 letenka </b>
+        <br>-starter kit
+        <br>-1 třida
+        <br>-zpaleni domu
+        <br> -očkovani 
+        <br>-mluvčí
+        <br>-otrok zdarma
+        </div>
+
+
+  <footer>
+    <div class="f1">   Kontaktujte nás na </div> 
+    <div class="f2">    tel: 222 541 741 </div> 
+    <div class="f3">    email: nigAfrican.com</div> 
+  </footer>
+</body> 
